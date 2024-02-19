@@ -1,12 +1,9 @@
-- 👋 Hi, I’m @hafizdhrp
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 
-<!---
-hafizdhrp/hafizdhrp is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+from docxtpl import DocxTemplat
+doc = DocxTemplate('report_template.docx')
+subject = {
+    'first_name': 'ridho',
+    'last_name': 'Hafizd'    
+    }
+doc.render(subject)
+doc.save('intel_report.docx')
